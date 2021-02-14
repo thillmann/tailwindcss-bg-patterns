@@ -5,6 +5,9 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "preexport": "rm -rf .next",
+    "export": "next build && next export",
+    "postexport": "touch out/.nojekyll && touch out/CNAME && echo \"hillmann.cc\" >> out/CNAME",
     "start": "next start"
   },
   "dependencies": {
