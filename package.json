@@ -1,0 +1,22 @@
+{
+  "name": "tailwindcss-bg-patterns",
+  "version": "0.1.0",
+  "keywords": [
+    "plugin",
+    "tailwind",
+    "tailwind css",
+    "tailwindcss",
+    "tailwindcss-plugin",
+    "css background patterns",
+    "background patterns"
+  ],
+  "repository": "git@github.com:thillmann/tailwind-patterns.git",
+  "license": "MIT",
+  "author": "Timo Hillmann <timo@hillmann.cc>",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "tailwindcss": "2.0.3"
+  },
+  "devDependencies": {}
+}
