@@ -1,5 +1,14 @@
 <h2 align="center">TailwindCSS Background Patterns</h1>
-<p align="center">Inspired by <a href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank" rel="noopener noreferrer">CSS Background Patterns by MagicPattern</a></p>
+<p align="center">Inspired by <a href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank" rel="noopener noreferrer">CSS Background Patterns by MagicPattern</a> and used by <a href="https://relayforms.com" target="_blank" rel="noopener noreferrer">RelayForms</a></p>
+
+<p>
+    <a href="https://www.npmjs.com/package/tailwindcss-bg-patterns"><img src="https://img.shields.io/npm/v/tailwindcss-bg-patterns.svg" alt="Latest Release"></a>
+    <a href="https://www.npmjs.com/package/tailwindcss-bg-patterns"><img src="https://img.shields.io/npm/dt/tailwindcss-bg-patterns.svg" alt="Total Downloads"></a>
+    <a href="https://github.com/thillmann/tailwindcss-bg-patterns/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/tailwindcss-bg-patterns.svg" alt="License"></a>
+</p>
+
+
+------
 
 ## Installation
 
