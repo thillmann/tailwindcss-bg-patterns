@@ -10,6 +10,10 @@
 
 ------
 
+## Demo
+
+See a live demo of all background patterns here: [Live demo](https://hillmann.cc/tailwindcss-bg-patterns/)
+
 ## Installation
 
 Add the `tailwindcss-bg-patterns` plugin to your project:
