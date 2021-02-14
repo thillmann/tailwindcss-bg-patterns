@@ -83,3 +83,7 @@ Applying the isometric background pattern to a div:
   class="w-56 h-56 pattern-isometric pattern-indigo-600 pattern-bg-transparent pattern-opacity-60 pattern-size-8"
 ></div>
 ```
+
+Which results in:
+
+![Isometric Example](/example/public/isometric.png)
