@@ -1,14 +1,11 @@
 <h2 align="center">TailwindCSS Background Patterns</h1>
-<p align="center">Inspired by [CSS Background Patterns by MagicPattern](https://www.magicpattern.design/tools/css-backgrounds)</p>
+<p align="center">Inspired by <a href="https://www.magicpattern.design/tools/css-backgrounds" target="_blank" rel="noopener noreferrer">CSS Background Patterns by MagicPattern</a></p>
 
 ## Installation
 
 Add the `tailwindcss-bg-patterns` plugin to your project:
 
 ```bash
-# Install using pnpm
-pnpm install --save-dev tailwindcss-bg-patterns
-
 # Install using npm
 npm install --save-dev tailwindcss-bg-patterns
 
@@ -51,9 +48,38 @@ yarn add -D tailwindcss-bg-patterns
 }
 ```
 
+## Background Patterns
+
+Included are the following patterns:
+
+- Lines (`pattern-lines`)
+- Vertical Lines (`pattern-vertical-lines`)
+- Rectangles (`pattern-rectangles`)
+- Rhombus (`pattern-rhombus`)
+- Dots (`pattern-dots`)
+- Boxes (`pattern-boxes`)
+- Cross (`pattern-cross`)
+- Zigzag (`pattern-zigzag`)
+- Zigzag 3D (`pattern-zigzag-3d`)
+- Isometric (`pattern-isometric`)
+- Wavy (`pattern-wavy`)
+
+## Utilities
+
+The plugin provides utility classes to control the foreground and background colors (based on your theme colors) as well as opacity and sizing (can be controlled in your theme, too):
+
+**Opacity**: `pattern-opacity-80` applies opacity of `0.8`
+
+**Size**: `pattern-size-8` applies a size of `2rem`
+
+**Color**: `pattern-indigo-600` (foreground) and `pattern-bg-white` (background)
+
 ## Example
 
 Applying the isometric background pattern to a div:
+
 ```html
-<div class="w-56 h-56 pattern-isometric pattern-indigo-600 pattern-bg-transparent pattern-opacity-60 pattern-size-8"></div>
+<div
+  class="w-56 h-56 pattern-isometric pattern-indigo-600 pattern-bg-transparent pattern-opacity-60 pattern-size-8"
+></div>
 ```
