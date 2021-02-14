@@ -115,7 +115,20 @@ const patterns = [
       backgroundSize: "var(--pattern-size, 40px) var(--pattern-size, 40px)",
     },
   },
+  {
+    name: "diagonal-lines",
+    styles: {
+      opacity: "var(--pattern-opacity, 0.4)",
+      backgroundColor: "var(--pattern-bg-color, transparent)",
+      background:
+        "repeating-linear-gradient( 45deg, var(--pattern-color), var(--pattern-color) calc(var(--pattern-size, 40px) * 0.2), var(--pattern-bg-color, transparent) calc(var(--pattern-size, 40px) * 0.2), var(--pattern-bg-color) var(--pattern-size, 40px) )",
+    },
+  },
 ];
+
+`background-color: #E5E5F7;
+opacity: 0.4;
+background: repeating-linear-gradient( 45deg, #444CF7, #444CF7 8.5px, #E5E5F7 8.5px, #E5E5F7 42.5px );`
 
 const defaultOpacities = {
   100: "1",

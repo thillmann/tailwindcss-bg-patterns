@@ -9,6 +9,7 @@ const patterns = [
   ["Boxes", "boxes"],
   ["Lines", "lines"],
   ["Vertical Lines", "vertical-lines"],
+  ["Diagonal Lines", "diagonal-lines"],
   ["Wavy", "wavy"],
   ["Cross", "cross"],
   ["Dots", "dots"],
@@ -87,7 +88,7 @@ export default function Home() {
       ></div>
       <Head>
         <title>Tailwind CSS Background Patterns</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/tailwindcss-bg-patterns/favicon.ico" />
       </Head>
       <header className="relative flex justify-center bg-white text-gray-900 py-6 mb-16 shadow-md">
         <h1 className={`text-3xl font-bold border-b-4 border-${color}-200`}>

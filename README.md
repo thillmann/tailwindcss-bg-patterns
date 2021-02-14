@@ -67,6 +67,7 @@ Included are the following patterns:
 
 - Lines (`pattern-lines`)
 - Vertical Lines (`pattern-vertical-lines`)
+- Diagonal Lines (`pattern-diagonal-lines`)
 - Rectangles (`pattern-rectangles`)
 - Rhombus (`pattern-rhombus`)
 - Dots (`pattern-dots`)
