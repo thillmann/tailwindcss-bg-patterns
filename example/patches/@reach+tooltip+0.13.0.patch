@@ -1,0 +1,26 @@
+diff --git a/node_modules/@reach/tooltip/dist/tooltip.cjs.development.js b/node_modules/@reach/tooltip/dist/tooltip.cjs.development.js
+index cd6059e..e9b432f 100644
+--- a/node_modules/@reach/tooltip/dist/tooltip.cjs.development.js
++++ b/node_modules/@reach/tooltip/dist/tooltip.cjs.development.js
+@@ -253,7 +253,7 @@ function useTooltip(_temp) {
+ 
+   function wrapMouseEvent(theirHandler, ourHandler) {
+     // Use internal MouseEvent handler only if PointerEvent is not supported
+-    if ("PointerEvent" in window) return theirHandler;
++    if (typeof window !== 'undefined' && "PointerEvent" in window) return theirHandler;
+     return utils.wrapEvent(theirHandler, ourHandler);
+   }
+ 
+diff --git a/node_modules/@reach/tooltip/dist/tooltip.esm.js b/node_modules/@reach/tooltip/dist/tooltip.esm.js
+index 94a8b4b..9935a6a 100644
+--- a/node_modules/@reach/tooltip/dist/tooltip.esm.js
++++ b/node_modules/@reach/tooltip/dist/tooltip.esm.js
+@@ -245,7 +245,7 @@ function useTooltip(_temp) {
+ 
+   function wrapMouseEvent(theirHandler, ourHandler) {
+     // Use internal MouseEvent handler only if PointerEvent is not supported
+-    if ("PointerEvent" in window) return theirHandler;
++    if (typeof window !== 'undefined' && "PointerEvent" in window) return theirHandler;
+     return wrapEvent(theirHandler, ourHandler);
+   }
+ 
