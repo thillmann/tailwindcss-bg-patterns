@@ -126,10 +126,6 @@ const patterns = [
   },
 ];
 
-`background-color: #E5E5F7;
-opacity: 0.4;
-background: repeating-linear-gradient( 45deg, #444CF7, #444CF7 8.5px, #E5E5F7 8.5px, #E5E5F7 42.5px );`
-
 const defaultOpacities = {
   100: "1",
   80: ".80",
