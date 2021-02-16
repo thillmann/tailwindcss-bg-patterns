@@ -18,6 +18,9 @@ const patterns = [
   ["Isometric", "isometric"],
   ["Rectangles", "rectangles"],
   ["Rhombus", "rhombus"],
+  ["Triangles", "triangles"],
+  ["Moon", "moon"],
+  ["Paper", "paper"],
 ];
 
 const sizes = [1, 2, 4, 6, 8, 16, 20, 24, 32];
@@ -39,14 +42,14 @@ export default function Home() {
         <title>Tailwind CSS Background Patterns</title>
         <link rel="icon" href="/tailwindcss-bg-patterns/favicon.ico" />
       </Head>
-      <header className="relative flex justify-center bg-white text-gray-900 py-6 mb-16 shadow-md">
+      <header className="relative flex justify-center py-6 mb-16 text-gray-900 bg-white shadow-md">
         <h1 className={`text-3xl font-bold border-b-4 border-${color}-200`}>
           Tailwind CSS Background Patterns
         </h1>
         <Tooltip tooltip="Tailwind CSS Background Patterns on GitHub">
           <a
             href="https://github.com/thillmann/tailwindcss-bg-patterns"
-            className="hover:text-gray-700 absolute right-12 top-1/2 transform -translate-y-1/2"
+            className="absolute transform -translate-y-1/2 hover:text-gray-700 right-12 top-1/2"
           >
             <span className="sr-only">
               Tailwind CSS Background Patterns on GitHub
@@ -61,7 +64,7 @@ export default function Home() {
         </Tooltip>
       </header>
       <main className="relative mb-32">
-        <div className="w-full grid gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 px-8">
+        <div className="grid w-full grid-cols-2 gap-4 px-8 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5">
           {patterns.map(([name, id]) => (
             <Pattern
               key={id}
@@ -77,14 +80,14 @@ export default function Home() {
           ))}
         </div>
       </main>
-      <div className="fixed z-40 shadow-lg rounded-full left-1/2 transform -translate-x-1/2 bottom-0 bg-white py-6 px-12 mb-8 flex space-x-8">
+      <div className="fixed bottom-0 z-40 flex px-12 py-6 mb-8 space-x-8 transform -translate-x-1/2 bg-white rounded-full shadow-lg left-1/2">
         <div>
           <label htmlFor="color" className="block text-sm font-bold">
             Color
           </label>
           <select
             id="color"
-            className="rounded bg-gray-50 border border-gray-200 text-sm"
+            className="text-sm border border-gray-200 rounded bg-gray-50"
             value={color}
             onChange={(ev) => {
               const newColor = ev.currentTarget.value;
@@ -104,7 +107,7 @@ export default function Home() {
           </select>
           {typeof colors[color] === "object" && (
             <select
-              className="rounded bg-gray-50 border border-gray-200 text-sm"
+              className="text-sm border border-gray-200 rounded bg-gray-50"
               value={colorHue}
               onChange={(ev) => setColorHue(ev.currentTarget.value)}
             >

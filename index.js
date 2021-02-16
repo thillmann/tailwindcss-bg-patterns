@@ -124,6 +124,34 @@ const patterns = [
         "repeating-linear-gradient( 45deg, var(--pattern-color), var(--pattern-color) calc(var(--pattern-size, 40px) * 0.2), var(--pattern-bg-color, transparent) calc(var(--pattern-size, 40px) * 0.2), var(--pattern-bg-color) var(--pattern-size, 40px) )",
     },
   },
+  {
+    name: "triangles",
+    styles: {
+      opacity: "var(--pattern-opacity, 0.4)",
+      backgroundColor: "var(--pattern-bg-color, transparent)",
+      backgroundImage: "linear-gradient(45deg, var(--pattern-color) 50%, var(--pattern-bg-color, transparent) 50%)",
+      backgroundSize: "var(--pattern-size, 40px) var(--pattern-size, 40px)",
+    },
+  },
+  {
+    name: "moon",
+    styles: {
+      opacity: "var(--pattern-opacity, 0.4)",
+      backgroundColor: "var(--pattern-bg-color, transparent)",
+      backgroundImage: "radial-gradient( ellipse farthest-corner at var(--pattern-size, 40px) var(--pattern-size, 40px), var(--pattern-color), var(--pattern-color) 50%, var(--pattern-bg-color, transparent) 50%)",
+      backgroundSize: "var(--pattern-size, 40px) var(--pattern-size, 40px)",
+    },
+  },
+  {
+    name: "paper",
+    styles: {
+      opacity: "var(--pattern-opacity, 0.4)",
+      backgroundColor: "var(--pattern-bg-color, transparent)",
+      backgroundImage: "linear-gradient(var(--pattern-color) calc(var(--pattern-size, 40px) * 0.04), transparent calc(var(--pattern-size, 40px) * 0.04)), linear-gradient(90deg, var(--pattern-color) calc(var(--pattern-size, 40px) * 0.04), transparent calc(var(--pattern-size, 40px) * 0.04)), linear-gradient(var(--pattern-color) calc(var(--pattern-size, 40px) * 0.02), transparent calc(var(--pattern-size, 40px) * 0.02)), linear-gradient(90deg, var(--pattern-color) 2px, var(--pattern-bg-color, transparent) calc(var(--pattern-size, 40px) * 0.02))",
+      backgroundSize: "var(--pattern-size, 40px) var(--pattern-size, 40px), var(--pattern-size, 40px) var(--pattern-size, 40px), calc(var(--pattern-size, 40px) * 0.2) calc(var(--pattern-size, 40px) * 0.2), calc(var(--pattern-size, 40px) * 0.2) calc(var(--pattern-size, 40px) * 0.2)",
+      backgroundPosition: "calc(var(--pattern-size, 40px) * -0.04) calc(var(--pattern-size, 40px) * -0.04), calc(var(--pattern-size, 40px) * -0.04) calc(var(--pattern-size, 40px) * -0.04), calc(var(--pattern-size, 40px) * -0.02) calc(var(--pattern-size, 40px) * -0.02), calc(var(--pattern-size, 40px) * -0.02) calc(var(--pattern-size, 40px) * -0.02)",
+    },
+  },
 ];
 
 const defaultOpacities = {
