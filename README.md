@@ -7,8 +7,7 @@
     <a href="https://github.com/thillmann/tailwindcss-bg-patterns/blob/main/LICENSE"><img src="https://img.shields.io/npm/l/tailwindcss-bg-patterns.svg" alt="License"></a>
 </p>
 
-
-------
+---
 
 ## Demo
 
@@ -77,6 +76,9 @@ Included are the following patterns:
 - Zigzag 3D (`pattern-zigzag-3d`)
 - Isometric (`pattern-isometric`)
 - Wavy (`pattern-wavy`)
+- Triangles (`pattern-triangles`)
+- Moon (`pattern-moon`)
+- Paper (`pattern-paper`)
 
 ## Utilities
 
@@ -84,9 +86,15 @@ The plugin provides utility classes to control the foreground and background col
 
 **Opacity**: `pattern-opacity-80` applies opacity of `0.8`
 
+By default the plugin comes with the following options for opacity: `pattern-size-100`, `pattern-size-80`, `pattern-size-60`, `pattern-size-40`, `pattern-size-20`, `pattern-size-10`, `pattern-size-5`x
+
 **Size**: `pattern-size-8` applies a size of `2rem`
 
+By default the plugin comes with the following options for size: `pattern-size-1`, `pattern-size-2`, `pattern-size-4`, `pattern-size-6`, `pattern-size-8`, `pattern-size-16`, `pattern-size-20`, `pattern-size-24`, `pattern-size-32`
+
 **Color**: `pattern-indigo-600` (foreground) and `pattern-bg-white` (background)
+
+Colors will be extracted from your theme.
 
 ## Example
 
