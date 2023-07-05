@@ -1,6 +1,6 @@
 {
-  "name": "tailwindcss-bg-patterns-workspace",
-  "version": "1.0.0",
+  "name": "tailwindcss-bg-patterns",
+  "version": "0.2.0",
   "keywords": [
     "plugin",
     "tailwind",
@@ -12,5 +12,13 @@
   ],
   "repository": "git@github.com:thillmann/tailwind-patterns.git",
   "license": "MIT",
-  "author": "Timo Hillmann <timo@hillmann.cc>"
+  "author": "Timo Hillmann <timo@hillmann.cc>",
+  "main": "index.js",
+  "scripts": {},
+  "devDependencies": {
+    "tailwindcss": "3.3.2"
+  },
+  "peerDependencies": {
+    "tailwindcss": "^2"
+  }
 }

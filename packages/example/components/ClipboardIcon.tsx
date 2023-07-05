@@ -1,4 +1,4 @@
-export function ClipboardIcon(props) {
+export function ClipboardIcon(props: JSX.IntrinsicElements["svg"]) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -17,7 +17,7 @@ export function ClipboardIcon(props) {
   );
 }
 
-export function ClipboardCheckIcon(props) {
+export function ClipboardCheckIcon(props: JSX.IntrinsicElements["svg"]) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

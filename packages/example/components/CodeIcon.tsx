@@ -1,4 +1,4 @@
-export function CodeIcon(props) {
+export function CodeIcon(props: JSX.IntrinsicElements["svg"]) {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"

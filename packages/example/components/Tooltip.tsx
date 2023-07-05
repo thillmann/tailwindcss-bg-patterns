@@ -1,18 +1,36 @@
-import { cloneElement, useEffect, useState } from "react";
+import {
+  CSSProperties,
+  PropsWithChildren,
+  ReactNode,
+  cloneElement,
+  isValidElement,
+  useEffect,
+  useState,
+} from "react";
 import { Transition } from "@headlessui/react";
 import { TooltipPopup, useTooltip } from "@reach/tooltip";
 
-const centered = (triggerRect, tooltipRect) => {
-  const triggerCenter = triggerRect.left + triggerRect.width / 2;
-  const left = triggerCenter - tooltipRect.width / 2;
-  const maxLeft = window.innerWidth - tooltipRect.width - 2;
+const centered = (
+  triggerRect?: Partial<DOMRect> | null,
+  tooltipRect?: Partial<DOMRect> | null
+) => {
+  if (!triggerRect || !tooltipRect) {
+    return {};
+  }
+  const triggerCenter = (triggerRect.left ?? 0) + (triggerRect.width ?? 0) / 2;
+  const left = triggerCenter - (tooltipRect.width ?? 0) / 2;
+  const maxLeft = window.innerWidth - (tooltipRect.width ?? 0) - 2;
   return {
     left: Math.min(Math.max(2, left), maxLeft) + window.scrollX,
-    top: triggerRect.bottom + 8 + window.scrollY,
-  };
+    top: (triggerRect.bottom ?? 0) + 8 + window.scrollY,
+  } as CSSProperties;
 };
 
-export function Tooltip({ children, tooltip, "aria-label": ariaLabel }) {
+export function Tooltip({
+  children,
+  tooltip,
+  "aria-label": ariaLabel,
+}: PropsWithChildren<{ tooltip: ReactNode; "aria-label"?: string }>) {
   const [triggerProps, tooltipProps, isVisible] = useTooltip();
   const [mounted, setMounted] = useState(isVisible);
   useEffect(() => {
@@ -23,7 +41,7 @@ export function Tooltip({ children, tooltip, "aria-label": ariaLabel }) {
   const handleAnimationLeave = () => setMounted(false);
   return (
     <>
-      {cloneElement(children, triggerProps)}
+      {isValidElement(children) && cloneElement(children, triggerProps)}
       <TooltipPopup
         {...tooltipProps}
         isVisible={mounted}

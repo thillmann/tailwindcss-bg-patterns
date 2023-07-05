@@ -1,5 +1,9 @@
-import { useEffect, useState } from "react";
-import { DialogOverlay, DialogContent } from "@reach/dialog";
+import { ReactNode, useEffect, useState } from "react";
+import {
+  DialogOverlay,
+  DialogContent,
+  DialogOverlayProps,
+} from "@reach/dialog";
 import { Transition } from "@headlessui/react";
 import { CloseIcon } from "./CloseIcon";
 
@@ -8,7 +12,7 @@ export function Dialog({
   "aria-label": ariaLabel,
   isOpen,
   ...props
-}) {
+}: DialogOverlayProps & Pick<JSX.IntrinsicElements["div"], "aria-label">) {
   const [mounted, setMounted] = useState(isOpen);
   useEffect(() => {
     if (isOpen) {
@@ -53,12 +57,12 @@ export function Dialog({
   );
 }
 
-export function useDialog(label, content) {
+export function useDialog(label: string, content: ReactNode) {
   const [open, setOpen] = useState(false);
   const dialog = (
     <Dialog aria-label={label} isOpen={open} onDismiss={() => setOpen(false)}>
       {content}
     </Dialog>
   );
-  return [dialog, () => setOpen(true)];
+  return [dialog, () => setOpen(true)] as const;
 }
