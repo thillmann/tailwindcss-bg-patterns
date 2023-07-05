@@ -170,7 +170,7 @@ export default function Home() {
             }}
           >
             {Object.keys(colors).map((key) => (
-              <option key={key} value={key} selected={color === key}>
+              <option key={key} value={key}>
                 {key}
               </option>
             ))}
@@ -185,7 +185,7 @@ export default function Home() {
               }}
             >
               {Object.keys(colors[color]).map((key) => (
-                <option key={key} value={key} selected={key === colorHue}>
+                <option key={key} value={key}>
                   {key}
                 </option>
               ))}
