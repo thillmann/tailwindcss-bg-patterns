@@ -19,6 +19,6 @@
     "tailwindcss": "3.3.2"
   },
   "peerDependencies": {
-    "tailwindcss": "^2"
+    "tailwindcss": ">2"
   }
 }
