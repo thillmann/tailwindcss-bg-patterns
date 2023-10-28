@@ -89,7 +89,7 @@ The plugin provides utility classes to control the foreground and background col
 
 **Opacity**: `pattern-opacity-80` applies opacity of `0.8`
 
-By default the plugin comes with the following options for opacity: `pattern-size-100`, `pattern-size-80`, `pattern-size-60`, `pattern-size-40`, `pattern-size-20`, `pattern-size-10`, `pattern-size-5`x
+By default the plugin comes with the following options for opacity: `pattern-opacity-100`, `pattern-opacity-80`, `pattern-opacity-60`, `pattern-opacity-40`, `pattern-opacity-20`, `pattern-opacity-10`, `pattern-opacity-5`x
 
 **Size**: `pattern-size-8` applies a size of `2rem`
 
