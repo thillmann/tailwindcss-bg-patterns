@@ -35,7 +35,7 @@ pnpm add -D tailwindcss-bg-patterns
 {
   theme: { // defaults to these values
     patterns: {
-        opacities: {
+        opacity: {
             100: "1",
             80: ".80",
             60: ".60",
@@ -44,7 +44,7 @@ pnpm add -D tailwindcss-bg-patterns
             10: ".10",
             5: ".05",
         },
-        sizes: {
+        size: {
             1: "0.25rem",
             2: "0.5rem",
             4: "1rem",
